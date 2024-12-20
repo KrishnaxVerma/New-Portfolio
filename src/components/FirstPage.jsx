@@ -4,8 +4,6 @@ import { useGSAP } from '@gsap/react';
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "motion/react"
 
-import img from "../assets/firstpage.jpg"
-import resume from "../assets/resume.pdf"
 
 import Navbar from './Navbar';
 import { delay } from 'motion';
@@ -40,7 +38,7 @@ function FirstPage() {
   return (
     <>  
         <Navbar className='z-30' show={Navshow} />
-        <div className="bg-fixed z-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url(${img})` }}></div>
+        <div className="bg-fixed z-0 h-screen bg-cover bg-center" style={{ backgroundImage: `url('../assets/firstpage.jpg')` }}></div>
         
         <div className="absolute inset-0 bg-black opacity-80 z-10"></div>
 
@@ -56,7 +54,7 @@ function FirstPage() {
             <div className='mt-5 text-2xl text-white'>I am learning Web Development .</div>
             <motion.a whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            id='resbtn' href={resume} download className='text-[#149ddd] font-semibold border-[#145edd] border-2 p-3 mt-10 rounded-lg hover:bg-[#145edd] hover:text-white'>Download Resume</motion.a>
+            id='resbtn' href='../assets/resume.pdf' download className='text-[#149ddd] font-semibold border-[#145edd] border-2 p-3 mt-10 rounded-lg hover:bg-[#145edd] hover:text-white'>Download Resume</motion.a>
         </div>
     </>
   )

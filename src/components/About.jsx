@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import img from "../assets/profile.jpg"
 import { motion } from "motion/react"
 
 function About() {
@@ -22,7 +21,7 @@ function About() {
                 whileHover={{scale:1.1}}
                 whileInView={{rotateY:360, opacity:1, transition:{duration:1}}} viewport={{ once: true }}
                 className="m-w-[300px] h-80 overflow-hidden rounded-xl">
-                    <img className="w-full h-full object-cover object-center" src={img} alt="" />
+                    <img className="w-full h-full object-cover object-center" src='../assets/profile.jpg' alt="" />
                 </motion.div>
             </div>
         </div>

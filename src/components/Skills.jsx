@@ -3,16 +3,6 @@ import Skillcard from './skillcard'
 
 import { motion } from 'motion/react'
 
-import c from "../assets/c.svg"
-import cpp from "../assets/cplusplus.svg"
-import html from "../assets/html.svg"
-import css from "../assets/css.svg"
-import js from "../assets/js.svg"
-import react from "../assets/react.svg"
-import tailwind from "../assets/tailwind.svg"
-import github from "../assets/github.svg"
-import git from "../assets/git.svg"
-import cp from "../assets/cp.svg"
 function Skills() {
   return (
     <div className='h-auto bg-[#00021a]'>
@@ -24,16 +14,16 @@ function Skills() {
             <motion.div initial={{opacity:0, y: 100 }}
             whileInView={{opacity:1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} 
             className="items grid grid-cols-4 gap-4 pt-10">
-              <Skillcard src={c} text="C" />
-              <Skillcard src={cpp} text="C++" />
-              <Skillcard src={html} text="HTML" />
-              <Skillcard src={css} text="CSS" />
-              <Skillcard src={js} text="JS" />
-              <Skillcard src={react} text="React JS" />
-              <Skillcard src={tailwind} text="Tailwind CSS" />
-              <Skillcard src={github} text="Github" />
-              <Skillcard src={git} text="Git" />
-              <Skillcard src={cp} text="CP" />
+              <Skillcard src='../assets/c.svg' text="C" />
+              <Skillcard src='../assets/cplusplus.svg' text="C++" />
+              <Skillcard src='../assets/html.svg' text="HTML" />
+              <Skillcard src='../assets/css.svg' text="CSS" />
+              <Skillcard src='../assets/js.svg' text="JS" />
+              <Skillcard src='../assets/react.svg' text="React JS" />
+              <Skillcard src='../assets/tailwind.svg' text="Tailwind CSS" />
+              <Skillcard src='../assets/github.svg' text="Github" />
+              <Skillcard src='../assets/git.svg' text="Git" />
+              <Skillcard src='../assets/cp.svg' text="CP" />
             </motion.div>
       </div>
     </div>
