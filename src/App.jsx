@@ -4,6 +4,8 @@ import Separator from './components/Separator'
 import About from './components/About'
 import Skills from './components/Skills'
 import Project from './components/Project'
+import Contact from './components/Contact'
+import Profiles from './components/Profiles'
 function App() {
   return (
     <>
@@ -12,9 +14,8 @@ function App() {
       <About /> <Separator />
       <Skills /> <Separator/>
       <Project /> <Separator />
-      <h1 className="text-3xl font-bold underline h-screen">
-        Hello world!
-      </h1>
+      <Contact /> 
+      <Profiles /> <Separator />
     </div>
     </>
   )

@@ -20,7 +20,7 @@ function FirstPage() {
       duration:1,
       delay:1,
     })
-    t1.from("#resbtn",{
+    t1.from(".resbtn",{
       opacity:0,
       y:100,
       duration:0.5
@@ -52,9 +52,14 @@ function FirstPage() {
         <div id='title' className='absolute inset-0 h-screen flex flex-col justify-center items-center z-20 text-center'>
             <div className='text-5xl uppercase font-bold text-[#149ddd]'>Krishna Verma</div>
             <div className='mt-5 text-2xl text-white'>I am learning Web Development .</div>
-            <motion.a whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            id='resbtn' href='../assets/resume.pdf' download className='text-[#149ddd] font-semibold border-[#145edd] border-2 p-3 mt-10 rounded-lg hover:bg-[#145edd] hover:text-white'>Download Resume</motion.a>
+            <div className='flex gap-3'>
+              <motion.a whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              href='https://www.linkedin.com/in/krishna-verma-04a78929a/' className='resbtn text-[#149ddd] font-semibold border-[#145edd] border-2 p-3 mt-2 rounded-lg hover:bg-[#145edd] hover:text-white'>Hire Me</motion.a>
+              <motion.a whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              href='../assets/resume.pdf' download className='resbtn text-[#149ddd] font-semibold border-[#145edd] border-2 p-3 mt-2 rounded-lg hover:bg-[#145edd] hover:text-white flex gap-2'>Resume <img src="../assets/download.svg" alt="" /></motion.a>
+            </div>
         </div>
     </>
   )

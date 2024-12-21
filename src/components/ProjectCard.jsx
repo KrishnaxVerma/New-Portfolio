@@ -6,7 +6,7 @@ function ProjectCard(props) {
   return (<a href={props.link} target="_blank">
     <motion.div initial={{opacity:0}}
     whileInView={{opacity:1, transition:{duration:1, delay:0.5}}}
-    whileHover={{borderColor: "#db2777", scale:1.1}} viewport={{once: true}}
+    whileHover={{borderColor: "#db2777", y:-10}} viewport={{once: true}}
     className='md:h-80 md:w-[300px] h-60 sm:w-[200px] w-[150px] bg-[#00021a] border-white border-2 rounded-xl overflow-hidden flex flex-col justify-between'>
       <img className='object-cover p-2' src={props.src} alt="" />
       <div>
