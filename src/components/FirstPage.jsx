@@ -4,7 +4,6 @@ import { useGSAP } from '@gsap/react';
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "motion/react"
 
-
 import Navbar from './Navbar';
 import { delay } from 'motion';
 
@@ -29,7 +28,11 @@ function FirstPage() {
       y:-100,
       scale:0,
       rotate:720,
-      duration:2
+      duration:1
+    })
+    t1.from("#uparr",{
+      scale:0,
+      duration:0.5
     })
   })
 
@@ -43,11 +46,13 @@ function FirstPage() {
         <div className="absolute inset-0 bg-black opacity-80 z-10"></div>
 
         { !Navshow && 
-          <span onClick={()=>{setNavshow(!Navshow)}} id='hamburger' className="material-symbols-outlined fixed z-30 text-white top-0 right-0 m-6 p-2 text-5xl bg-blue-500 rounded-full cursor-pointer">menu</span>
+          <span onClick={()=>{setNavshow(!Navshow)}} id='hamburger' className="material-symbols-outlined fixed z-50 text-white top-0 right-0 m-6 p-2 text-5xl bg-blue-500 rounded-full cursor-pointer">menu</span>
         }
         { Navshow &&
-          <span onClick={()=>{setNavshow(!Navshow)}} className="material-symbols-outlined fixed z-30 text-white top-0 right-0 m-6 p-2 text-5xl bg-blue-500 rounded-full cursor-pointer">close</span>
+          <span onClick={()=>{setNavshow(!Navshow)}} className="material-symbols-outlined fixed z-50 text-white top-0 right-0 m-6 p-2 text-5xl bg-blue-500 rounded-full cursor-pointer">close</span>
         }
+
+        <a href="#title"><span id="uparr" className="material-symbols-outlined fixed z-50 text-white bottom-0 right-0 m-6 p-1 text-5xl bg-blue-500 rounded-full cursor-pointer">arrow_upward</span></a>
 
         <div id='title' className='absolute inset-0 h-screen flex flex-col justify-center items-center z-20 text-center'>
             <div className='text-5xl uppercase font-bold text-[#149ddd]'>Krishna Verma</div>

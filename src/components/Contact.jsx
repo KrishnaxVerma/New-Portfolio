@@ -3,7 +3,7 @@ import { motion } from 'motion/react'
 
 function Contact() {
   return (
-    <div className='h-auto bg-[#00021a]'>
+    <div id='CONTACT' className='h-auto bg-[#00021a]'>
       <div className='lg:w-[80%] w-full m-auto pb-10'>
         <motion.h1 initial={{scale:0, opacity: 0 }}
             whileInView={{ scale:1, opacity: 1,transition: { duration: 1 } }} viewport={{ once: true }}
