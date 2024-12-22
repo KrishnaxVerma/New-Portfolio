@@ -1,5 +1,5 @@
 import React from 'react'
-import Skillcard from './skillcard'
+import Skillcard from './Skillcard'
 
 import { motion } from 'motion/react'
 
