@@ -23,6 +23,8 @@ function Skills() {
               <Skillcard src='../assets/tailwind.svg' text="Tailwind CSS" />
               <Skillcard src='../assets/github.svg' text="Github" />
               <Skillcard src='../assets/git.svg' text="Git" />
+              <Skillcard src='../assets/mysql.svg' text="MySQL" />
+              <Skillcard src='../assets/mongo.svg' text="MongoDB" />
               <Skillcard src='../assets/cp.svg' text="CP" />
             </motion.div>
       </div>
