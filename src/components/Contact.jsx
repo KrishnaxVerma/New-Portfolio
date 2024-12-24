@@ -1,7 +1,33 @@
 import React from 'react'
 import { motion } from 'motion/react'
+import { useState } from 'react';
 
 function Contact() {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    const ACCESS_KEY= import.meta.env.REACT_APP_ACCESS_KEY;
+    formData.append("access_key", ACCESS_KEY);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div id='CONTACT' className='h-auto bg-[#00021a]'>
       <div className='lg:w-[80%] w-full m-auto pb-10'>
@@ -41,15 +67,17 @@ function Contact() {
 
             <div className='flex flex-col justify-center items-left gap-3'>
             <h2 className='text-white text-2xl'>Contact form</h2>
-            <form action="#" className='flex flex-col gap-2'>
-              <input className='border p-2 rounded-lg md:w-80 w-60 focus:outline-none' type="text" placeholder='Name' required />
-              <input className='p-2 rounded-lg md:w-80 w-60 focus:outline-none' type="email" placeholder='Email' required />
-              <textarea className='p-2 rounded-lg md:w-80 w-60 focus:outline-none' placeholder="Message.." required />
+            <form onSubmit={onSubmit} className='flex flex-col gap-2'>
+
+              <input className='border p-2 rounded-lg md:w-80 w-60 focus:outline-none' name='name' type="text" placeholder='Name' required />
+              <input className='p-2 rounded-lg md:w-80 w-60 focus:outline-none' name='email' type="email" placeholder='Email' required />
+              <textarea className='p-2 rounded-lg md:w-80 w-60 focus:outline-none' name='message' placeholder="Message.." required />
 
               <motion.button
               whileHover={{color:"#DB2777", backgroundColor:"transparent", transition:{duration:0}}}
               type="submit" className='w-fit p-4 bg-pink-600 text-white py-2 px border-2 border-pink-600 rounded-lg'>Send Message</motion.button>
             </form>
+            <span className='text-white'>{result}</span>
             </div>
           </motion.div>   
       </div>

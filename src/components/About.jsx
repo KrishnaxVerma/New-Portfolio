@@ -11,7 +11,7 @@ function About() {
             whileInView={{ scale:1, opacity: 1,transition: { duration: 1 } }} viewport={{ once: true }}
             className='text-center text-5xl pt-10 text-white'>About Me</ motion.h1>
 
-            <div className="flex lg:flex-row flex-col justify-between items-center gap-10 pb-20 pt-20">
+            <div className="flex lg:flex-row flex-col-reverse justify-between items-center gap-10 pb-20 pt-20">
                 <motion.div initial={{opacity:0}}
                 whileInView={{opacity:1, transition:{duration:2, delay:0.5}}} viewport={{ once: true }}
                 className="desc text-justify lg:w-[70%] w-[90%] sm:text-xl text-sm leading-8 text-white">
