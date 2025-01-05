@@ -16,8 +16,14 @@ function FirstPage() {
     t1.from("#title",{
       scale:0,
       opacity:0,
-      duration:1,
-      delay:1,
+      duration:0.5,
+      // delay:1,
+    })
+    t1.from("#name span",{
+      opacity:0,
+      x:-50,
+      stagger:0.1,
+      duration:0.5
     })
     t1.from(".resbtn",{
       opacity:0,
@@ -55,7 +61,20 @@ function FirstPage() {
         <a href="#title"><span id="uparr" className="material-symbols-outlined fixed z-50 text-white bottom-0 right-0 m-6 p-1 text-5xl bg-blue-500 rounded-full cursor-pointer">arrow_upward</span></a>
 
         <div id='title' className='absolute inset-0 h-screen flex flex-col justify-center items-center z-20 text-center'>
-            <div className='text-5xl uppercase font-bold text-[#149ddd]'>Krishna Verma</div>
+            <div id='name' className='text-5xl uppercase font-bold text-[#149ddd]'>
+            <span>K</span>
+            <span>r</span>
+            <span>i</span>
+            <span>s</span>
+            <span>h</span>
+            <span>n</span>
+            <span>a</span>
+            <span>&nbsp;</span>
+            <span>V</span>
+            <span>e</span>
+            <span>r</span>
+            <span>m</span>
+            <span>a</span></div>
             <div className='mt-5 text-2xl text-white'>I am learning Web Development .</div>
             <div className='flex gap-3'>
               <motion.a whileHover={{ scale: 1.1 }}
