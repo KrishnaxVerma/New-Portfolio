@@ -61,7 +61,7 @@ function FirstPage() {
         <a href="#title"><span id="uparr" className="material-symbols-outlined fixed z-50 text-white bottom-0 right-0 m-6 p-1 text-5xl bg-blue-500 rounded-full cursor-pointer">arrow_upward</span></a>
 
         <div id='title' className='absolute inset-0 h-screen flex flex-col justify-center items-center z-20 text-center'>
-            <div id='name' className='text-5xl uppercase font-bold text-[#149ddd]'>
+            <div id='name' className='sm:text-5xl text-3xl uppercase font-bold text-[#149ddd]'>
             <span>K</span>
             <span>r</span>
             <span>i</span>
