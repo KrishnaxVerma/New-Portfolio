@@ -18,12 +18,13 @@ function Project() {
       </div>
 
         <div className='flex flex-wrap justify-center gap-3 p-6'>
+            <ProjectCard src='../assets/ManitMart-project.png' title='Manit Mart' desc='React JS, Tailwind CSS, Node JS, MongoDB, Express JS' link='https://manit-mart-frontend.onrender.com/' />
             <ProjectCard src='../assets/TaskManager-project.png' title='Task Manager' desc='React JS, Tailwind CSS' link='https://task-manager-gamma-seven.vercel.app/' />
-            <ProjectCard src='../assets/Drumkit-project.png' title='DrumKit' desc='HTML, CSS, GSAP, JS' link='https://drum-kit-theta-beryl.vercel.app/'/>
-            <ProjectCard src='../assets/TwoGoodCo.png' title='Two Good Co' desc='HTML, Tailwind CSS, GSAP' link='https://two-good-co-steel.vercel.app/' />
             <ProjectCard src='../assets/netflix-project.png' title='Netflix Clone' desc='HTML, CSS' link='https://netflix-henna-nine.vercel.app/' />
             <ProjectCard src='../assets/x-project.png' title='X Clone' desc='HTML, Tailwind CSS' link='https://krishnax.freewebhostmost.com/' />
             <ProjectCard src='../assets/Spotify-project.jpg' title='Music Player' desc='HTML, CSS, JS' link='https://github.com/KrishnaxVerma/Spotify' />
+            <ProjectCard src='../assets/Drumkit-project.png' title='DrumKit' desc='HTML, CSS, GSAP, JS' link='https://drum-kit-theta-beryl.vercel.app/'/>
+            <ProjectCard src='../assets/TwoGoodCo.png' title='Two Good Co' desc='HTML, Tailwind CSS, GSAP' link='https://two-good-co-steel.vercel.app/' />
         </div>
     </div>
   )
