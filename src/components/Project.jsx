@@ -19,6 +19,7 @@ function Project() {
 
         <div className='flex flex-wrap justify-center gap-3 p-6'>
             <ProjectCard src='../assets/ManitMart-project.png' title='Manit Mart' desc='React JS, Tailwind CSS, Node JS, MongoDB, Express JS' link='https://manit-mart-frontend.onrender.com/' />
+            <ProjectCard src='../assets/ChatApp-project.png' title='Chat App' desc='React JS, Tailwind CSS, Node JS, MongoDB, Express JS, Socket IO, JWT' link='https://chat-app-w0oa.onrender.com/' />
             <ProjectCard src='../assets/TaskManager-project.png' title='Task Manager' desc='React JS, Tailwind CSS' link='https://task-manager-gamma-seven.vercel.app/' />
             <ProjectCard src='../assets/netflix-project.png' title='Netflix Clone' desc='HTML, CSS' link='https://netflix-henna-nine.vercel.app/' />
             <ProjectCard src='../assets/x-project.png' title='X Clone' desc='HTML, Tailwind CSS' link='https://krishnax.freewebhostmost.com/' />
