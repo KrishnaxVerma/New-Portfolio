@@ -10,12 +10,12 @@ function App() {
   return (
     <>
     <div className='font-poppins'>
-      <FirstPage /> <Separator />
-      <About /> <Separator />
-      <Skills /> <Separator/>
-      <Project /> <Separator />
+      <FirstPage /> 
+      <About /> 
+      <Skills /> 
+      <Project /> 
       <Contact /> 
-      <Profiles /> <Separator />
+      <Profiles /> 
     </div>
     </>
   )
